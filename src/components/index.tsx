@@ -45,7 +45,7 @@ export const App: React.FC = () => {
   
   const calculate = () => {
     if(operator === "+"){
-      setNum(parseFloat(oldNum) + parseFloat(num))
+      setNum(Number(oldNum) + Number(num))
     }
     if(operator === "X"){
       setNum(oldNum * num)
